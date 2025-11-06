@@ -1,0 +1,248 @@
+:root{
+    --black_ground:#121212;
+   --grafite:#383838;
+    --eclipse_black: #1a1a1a;   
+    --carbon_smooth: #2a2a2a;
+    --white_secondary: #F0F8FF;   
+    --white_tertiary: #E8F4F8;    
+    --bluebeatiful: #33A8DB;
+    --blue-light: #1472B7;
+  
+  
+    /* gradiente*/
+  
+    --bluarle: linear-gradient(80deg, #33A8DB, #1472B7);
+}
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+ font-family: "Raleway", sans-serif;
+ background:var( --black_ground) ;
+ color:var(--white_tertiary);
+  padding: clamp(1rem, 5vw, 5.625rem) clamp(1rem, 6vw, 5.625rem);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+/* part1 logo*/
+.banner-content{
+ background-image: 
+        linear-gradient(
+            to bottom,
+            #121212cc 0%,      
+            #1212127a 30%,    
+            #31a9dd33 50%,    
+            #1212127a 70%,    
+            #121212cc 100%   
+        ),
+        url("./images/banner.png");
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-items: center;
+  width:140%;  height: 500px;
+  max-width: 1440px;
+  position: relative;
+  left: -200px;
+}
+.logo{
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background: #1f202016;
+width: 240px;
+    height: 240px;
+    border-radius: 50%;
+   box-shadow:0 5px 20px #121212;
+   position: relative;
+   left: -28px;
+}
+
+.banner h1{
+    background:var(--bluarle);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: black;
+    line-height: 100%;
+    position: relative;
+    left: -10px; top: 20px;
+    transition: 0.2s ease;
+}
+.banner p{
+    font-size: 20px;
+    max-width: 40.4%;
+    position: relative;
+    top: 64px;
+    font-weight: 400;
+    font-weight: normal;
+       line-height: 100%;
+       position: relative;
+       top: 40px; left: 20px;
+}
+.banner button{
+    background: transparent;
+    border: 1px solid #1472B7;  
+    color: #33A8DB;
+    border-radius: 3px;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    position: relative;
+    left: 540px;  top: 98px;
+    line-height: 100%;
+    box-shadow: 0 6px 10px rgba(24, 209, 255, 0.089);
+    transition: all 0.4s ease;
+}
+
+.banner button:hover{
+    background: transparent;
+    color: #62c7f1;
+    border: 1px solid #62c7f1;
+    box-shadow: 0 10px 30px #62c6f12f;
+    transform: translateY(-9px);
+}
+
+/* part2 base*/
+#course-content h2{
+    color: #1472B7;
+    font-size: 34px;
+    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 0.19em;  
+
+    
+    position: absolute;
+    left: 34%;
+    top: 40%;
+}
+
+#course-content p{
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top: 340px;
+    left: 12%;
+    max-width: 80%;
+}
+
+.module span{
+    color: #33A8DB;
+    text-shadow: 0 5px 12px #33a9db77;
+}
+
+.module{
+  text-align: center;
+    padding: 16px 118px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    max-width: 660px;
+    height: 60px;
+    background: #2a2a2a;
+    border: 1px solid #33A8DB;
+    border-radius: 80px;
+    box-shadow: 
+        0 0 20px rgba(54, 53, 53, 0.5),
+        0 0 10px rgba(3, 3, 3, 0.4);  
+    cursor: default;
+    margin-bottom: 35px;
+    transition: all 0.2s ease;
+    position: relative;
+    top: 390px;
+    left: 300px;
+}
+
+.module:hover{
+    box-shadow: 0 0 10px rgba(19, 183, 248, 0.4);
+    transform: translateY(-16px);
+}
+
+
+
+/* part3 base*/
+
+#transform-world{
+    width: 150%;  
+    max-width: 1440px;
+    height: 100%;
+    background-image: url("./images/woman-code.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 60vh;
+    opacity: 0.8;
+    position: relative;
+    top: 480px; left: -90px;
+} 
+#transform-world p{
+  font-size: 40px;
+  font-style: black;
+ font-weight: 900;
+ width: 20%;
+ text-shadow: 4PX 2px 3PX var(--bluebeatiful);
+ position: relative;
+ left: 100px; top: 59px;
+}
+/* part4 base */ 
+#professional-challenges img{
+    position: relative;
+ top: 820px; left: 260px;
+}
+#professional-challenges h2{
+    width: 746px;
+    position: relative;
+    top: 680px; left: 280px;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 19%;
+    font-weight: bolder;
+    color: var(--bluebeatiful);
+}
+#professional-challenges p{
+    width: 940px;
+    max-width: 70%;
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-size: 16px;
+    line-height: 100%;
+    position: relative;
+    top: 880px; left: 200px;
+}
+.dio-logo, p{
+position: relative;
+top: 1090px; left: 10px;
+}
+.dio-logo, a{
+    color: #33A8DB;
+   text-decoration: none;
+
+}
+.agrvai{
+
+  background: linear-gradient(
+    to top,
+    rgba(51, 169, 219, 0.161) 0%,
+    rgba(51, 169, 219, 0.044) 50%,
+    rgba(51, 169, 219, 0.002) 100%
+  );
+
+  position: relative;
+  top: 1180px; left: -560px;
+  min-height: 100px; 
+  width: 460%; 
+}
