@@ -156,7 +156,7 @@ width: 240px;
     border: 1px solid #33A8DB;
     border-radius: 80px;
     box-shadow: 
-        0 0 20px rgba(54, 53, 53, 0.5),
+        inset  0 0 20px rgba(29, 154, 249, 0.303),
         0 0 10px rgba(3, 3, 3, 0.4);  
     cursor: default;
     margin-bottom: 35px;
@@ -245,4 +245,5 @@ top: 1090px; left: 10px;
   top: 1180px; left: -560px;
   min-height: 100px; 
   width: 460%; 
+
 }
